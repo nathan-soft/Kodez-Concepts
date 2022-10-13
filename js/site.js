@@ -5,8 +5,8 @@ let lblMins = document.getElementById("mins");
 let lblSecs = document.getElementById("secs");
 
 // Set the date we're counting down to
-var countDownDate = new Date("2022-11-1T00:00:60").getTime();
-
+var countDownDate = new Date('2022-11-01T00:00:59').getTime();
+console.log(countDownDate);
 // Update the count down every 1 second
 let x = setInterval(function() {
 
