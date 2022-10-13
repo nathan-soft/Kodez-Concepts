@@ -1,0 +1,113 @@
+:root{
+    --bg-primary: #5862f4;
+    --dark-grey: #56525C;
+    --dark: #151519;
+}
+
+body{
+    min-height: 100vh;
+    /* background-image: url(/images/Group2.png);
+    background-size:auto;
+    background-position: 100% 0;
+    background-repeat: no-repeat; */
+}
+
+.logo{
+    padding-top: 1rem;
+    max-height: 70px;
+    color: var(--bg-primary);
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 100px);
+    justify-content: center;
+    align-items: center;
+}
+
+header>h1{
+    color: var(--bg-primary);
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.countdown-container{
+    display: flex;
+    color: var(--dark);
+    font-family: 'Orbitron', sans-serif;
+    margin-top: 2.3rem;
+}
+
+.countdown-container>div{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 1em 1.7em;
+    margin-right: 1rem;
+}
+.countdown-container>div:last-child{
+    margin-right: 0;
+}
+
+.countdown-container>div>span:last-of-type{
+    color: var(--dark-grey);
+    font-size: 3em;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    max-height: 50px;
+    color: var(--dark);
+}
+
+@media screen and (max-width: 671px) {
+    .countdown-container{
+        margin-top: 1.5rem;
+    }
+
+    .countdown-container>div{
+        padding: 1em 1.2em;
+    }
+
+    .countdown-container>div>span:last-of-type{
+        font-size: 1.7em;
+    }
+
+    @media screen and (max-width: 576px) {
+        .countdown-container{
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            gap: 1rem;
+        }
+
+        .countdown-container>div{
+            margin-right: 0;
+        }
+    }
+
+    @media screen and (max-width: 510px) {
+        main{
+            justify-content: initial;
+        }
+
+        header{
+            margin-top: 7rem;
+        }
+
+        .countdown-container{
+            margin-top: 2.3rem;;
+        }
+
+        @media screen and (max-width: 395px) {
+            header>h1{
+                font-size: 40px;
+            }
+        }
+    }
+}
