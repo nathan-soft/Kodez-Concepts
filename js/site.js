@@ -23,10 +23,10 @@ let x = setInterval(function() {
   let seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
   // Result is output to the specific element
-  lblDays.innerText = days;
-  lblHours.innerText = hours; 
-  lblMins.innerText = minutes;
-  lblSecs.innerText = seconds;
+  lblDays.textContent = days;
+  lblHours.textContent = hours; 
+  lblMins.textContent = minutes;
+  lblSecs.textContent = seconds;
     
   // If the count down is over, write some text 
   if (distance <= 0) {
