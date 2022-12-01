@@ -1,44 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/site.css">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/site.css">
 </head>
-<body class="container">
-    <h5 class="logo">Kodez <span style="color: #EB7973;">Concepts</span></h5>
+
+<body>
+    <nav class="navbar navbar-expand-md py-0">
+        <div class="container">
+            <img src="images/Brand-logo.svg" alt="brand-logo" class="navbar-brand img-fluid">
+            <button type="button" class="btn border-0 d-block d-md-none" data-bs-toggle="offcanvas" data-bs-target="#navmenu" aria-controls="offcanvasExample">
+                <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:  30px; height: 30px;">
+                    <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="#ffffff" />
+                </svg>
+            </button>
+            <ul class="navbar-nav flex-fill justify-content-center d-none d-md-flex">
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">What We Offer</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="offcanvas offcanvas-end d-block d-md-none px-4  shadow" id="navmenu">
+            <div class="offcanvas-header justify-content-end mt-1 px-0">
+                <img src="images/ci_close-big.svg" alt="close btn" data-bs-dismiss="offcanvas">
+            </div>
+    
+            <ul class="navbar-nav offcanvas-nav flex-column align-items-center pt-5">
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">What We Offer</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">Products</a></li>
+                <li class="nav-item"><a class="nav-link fw-bold" href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <main>
-        <header>
-            <h1>COMING SOON</h1>
-        </header>
-        <section class="countdown-container">
-            <div class="day-container shadow">
-                <span>Days</span>
-                <span id="days">20</span>
-            </div>
-            <div class="hour-container shadow">
-                <span>Hours</span>
-                <span id="hours">20</span>
-            </div>
-            <div class="minutes-container shadow">
-                <span>Minutes</span>
-                <span id="mins">34</span>
-            </div>
-            <div class="seconds-container shadow">
-                <span>Seconds</span>
-                <span id="secs">56</span>
+        <section class="hero-section">
+            <div class="container d-flex flex-column-reverse flex-md-row align-items-center justify-content-center">
+                <div class="hero-content d-flex flex-column gap-3 col-lg-6">
+                    <div>
+                        <h1 class="mb-0 fw-bolder">No 1 solar solutions</h1>
+                        <h2 class="mb-0 fw-bolder">Provider in Nigeria.</h2>
+                    </div>
+                    <p class="mb-0">Get renewable energy at affordable prices anywhere in the world. we specialize in importing and exporting of
+                        varun solar pumps.</p>
+                    <div>
+                        <button class="btn fw-bold cta-btn text-white rounded">Talk To Us</button>
+                    </div>
+                </div>
+
+                <div class="hero-img-wrapper">
+                    <img src="images/hero-img_small.png" alt="" class="img-fluid">
+                </div>
             </div>
         </section>
+
+        <section class="services-section">
+            <div class="container d-flex flex-column gap-4 gap-md-5">
+                <h5 class="text-center mb-0 fw-bold">What We Offer</h5>
+                <div class="row gap-4 gap-lg-2 justify-content-center">
+                    <div class="col-sm-8 col-md-6 col-lg-3 d-flex flex-column gap-2 align-items-center">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/fluent-mdl2_market.svg" alt="sales-img" class="services-icon">
+                            <h6 class="fw-bold mb-0 text-dark">Sales</h6>
+                        </div>
+                        <p class="mb-0 text-center services-text">Markup for sales, should be nothing more than 2 lines hopefully.</p>
+                    </div>
+
+                    <div class="col-sm-8 col-md-6 col-lg-3 d-flex flex-column gap-2 align-items-center">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/carbon_delivery-parcel.svg" alt="sales-img" class="services-icon">
+                            <h6 class="fw-bold mb-0 text-dark">Supply</h6>
+                        </div>
+                        <p class="mb-0 text-center services-text">Markup for sales, should be nothing more than 2 lines hopefully.</p>
+                    </div>
+
+                    <div class="col-sm-8 col-md-6 col-lg-3 d-flex flex-column gap-2 align-items-center">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="images/heroicons_wrench-screwdriver.svg" alt="sales-img" class="services-icon">
+                            <h6 class="fw-bold mb-0 text-dark">Installation</h6>
+                        </div>
+                        <p class="mb-0 text-center services-text">Markup for sales, should be nothing more than 2 lines hopefully.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-section d-flex flex-column gap-5">
+            <h5 class="mb-0 text-center fw-bold">Our Products</h5>
+            <div class="container d-flex justify-content-center align-items-center flex-column-reverse flex-md-row gap-4 gap-lg-5">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-2">
+                        <img src="images/material-symbols_check-circle-rounded.svg" alt="check-icon">
+                        <p class="mb-0">Solar Panels</p>
+                    </div>
+    
+                    <div class="d-flex gap-2">
+                        <img src="images/material-symbols_check-circle-rounded.svg" alt="check-icon">
+                        <p class="mb-0">Solar Street Lights</p>
+                    </div>
+    
+                    <div class="d-flex gap-2">
+                        <img src="images/material-symbols_check-circle-rounded.svg" alt="check-icon">
+                        <p class="mb-0">Solar Submersible Water Pump</p>
+                    </div>
+    
+                    <div class="d-flex gap-2">
+                        <img src="images/material-symbols_check-circle-rounded.svg" alt="check-icon">
+                        <p class="mb-0">Solar Inverters</p>
+                    </div>
+    
+                    <div class="d-flex gap-2">
+                        <img src="images/material-symbols_check-circle-rounded.svg" alt="check-icon">
+                        <p class="mb-0">Cables and Accessories</p>
+                    </div>
+                </div>
+
+                <div class="slider-container p-5">
+                   <img src="images/Rectangle 2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section d-flex flex-column gap-4 gap-md-5">
+            <h5 class="mb-0 text-center fw-bold">Contact Us</h5>
+            <div class="d-flex flex-column align-items-center flex-lg-row justify-content-lg-center gap-3 ">
+                <div class="d-flex flex-column flex-sm-row  justify-ctontent-center  gap-3 gap-sm-5 gap-lg-3">
+                    <div class="d-flex flex-column gap-2  col-auto">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="images/mdi_email-outline.svg" alt="" class="contact-icon">
+                            <h6 class="mb-0 fw-bold">Email Us</h6>
+                        </div>
+                        <p class="mb-0 d-flex flex-column">
+                            <a href="Mailto: ckodeznigltd@yahoo.com" class="text-decoration-none">ckodeznigltd@yahoo.com,</a>                                
+                            <a href="Mailto: ckodezltd@gmail.com" class="text-decoration-none">ckodezltd@gmail.com</a>
+                        </p>
+                    </div>
+            
+                    <div class="d-flex flex-column gap-2 col-auto">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="images/material-symbols_location-on-outline.svg" alt="" class="contact-icon">
+                            <h6 class="mb-0 fw-bold">Head Office</h6>
+                        </div>
+                        <p class="mb-0 d-flex flex-column">
+                            <span>A291 (Nasco Line),</span>
+                            <span>Bridge Head Market, Onitsha,</span>
+                            <span>Anambra, Nigeria.</span>
+                        </p>
+                        <p class="mb-0 d-flex flex-column">
+                            <a href="tel: +2348038996975" class="text-decoration-none">+2348038996975,</a>
+                            <a href="tel: +2348056773990" class="text-decoration-none">+2348056773990</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 gap-sm-5 gap-lg-3">
+                    <div class="d-flex flex-column gap-2 col-auto lagos-office">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="images/material-symbols_location-on-outline.svg" alt="" class="contact-icon">
+                            <h6 class="mb-0 fw-bold">Lagos Office</h6>
+                        </div>
+        
+                        <p class="mb-0 d-flex flex-column"><span>New Heaven Plaza,</span>
+                            <span> Block 2, Suite 1, Shop 40,</span>
+                            <span>Coker Market, Orile,</span>
+                            <span>Lagos, Nigeria.</span>
+                        </p>
+                        
+                        <p class="mb-0"><a href="tel: ++2347061217550" class="text-decoration-none">+2347061217550</a></p>
+                    </div>
+
+                    <div class="d-flex flex-column gap-2  col-auto delta-office">
+                        <div class="d-flex flex-column gap-1">
+                            <img src="images/material-symbols_location-on-outline.svg" alt="" class="contact-icon">
+                            <h6 class="mb-0 fw-bold">Delta Office</h6>
+                        </div>
+                    
+                        <p class="mb-0 d-flex flex-column"><span>11 Keneth Oliseh street,</span>
+                            <span>off Fear God B/stp,</span>
+                            <span>By Bonsaac, Asaba,</span>
+                            <span> Delta, Nigeria.</span>
+                        </p>
+                        
+                        <p class="mb-0"><a href="tel: +2348161421383" class="text-decoration-none">+2348161421383</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section cta-wrapper d-flex flex-column flex-sm-row justify-content-center align-items-center gap-3 gap-sm-5">
+                <h5 class="mb-0 fw-bolder d-flex flex-column px-sm-3">
+                    <span>Commercial, Residential &</span>  
+                    <span>Industrial Solar Systems!</span>
+                </h5>
+
+            <button type="button" class="btn cta-btn rounded fw-bold text-white">Find Out More</button>
+        </section>
     </main>
-    <footer>
-        <small>&copy;copyrights kodez concepts 2022<small>
+
+    <footer class="container footer-section d-flex flex-column align-items-center gap-3">
+        <li class="list-unstyled">
+            <a href="www.facebook.com"><img src="images/iconoir_facebook.svg" alt=""></a>
+            <a href="www.instagram.com"><img src="images/ph_instagram-logo.svg" alt=""></a>
+        </li>
+        <p class="mb-0 footer-text">
+            <span class="d-none d-md-block">Kodez Concepts Ltd 2022 | © Copyright. All Rights Reserved</span> 
+            <span class="d-block d-md-none text-center">© 2022 Kodez Concepts Ltd. All Rights Reserved</span>
+        </p>
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-    <script src="./js/site.js"></script>
-  </body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>
