@@ -65,6 +65,7 @@ a{
 }
 
 section, .footer-section{
+    position: relative;
     padding-top: 3.125rem;
     padding-bottom:  3.125rem;
 }
@@ -156,6 +157,148 @@ h6 {
 
 /****************************** Mobile Design ********************************/
 @media screen and (max-width: 1400px){
+
+    @media screen and (min-width: 768px) and (max-width: 992px)  {
+        body{
+            background-position: 230% -70px;
+            /* background-size:  auto 380px; */
+        }
+
+        .navbar .container{
+            gap: 2.3rem;
+        }
+    
+        .hero-section{
+            min-height: 500px;
+        }
+
+        .hero-section>div{
+            margin-top: 3rem;;
+            justify-content: start !important;
+        }
+
+        .hero-content{
+            width: 66.6666%;
+        }
+        
+        h1{
+            font-size:  52px;
+        }
+        h2{
+            font-size:  45px;
+        }
+    
+        .hero-img-wrapper{
+            position: absolute;
+            right: 5rem;
+            width: 320px;
+        }
+
+        @media screen and (max-width: 960px){
+            body{
+                background-position: 260% -70px;
+                /* background-size:  auto 380px; */
+            }
+        }
+
+        @media screen and (max-width: 930px){
+            body{
+                background-position: 290% -70px;
+                /* background-size:  auto 380px; */
+            }
+
+            .hero-img-wrapper{
+                position: absolute;
+                right: 5rem;
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 900px){
+            body{
+                background-position: 350% -70px;
+                /* background-size:  auto 380px; */
+            }
+
+            .hero-img-wrapper{
+                position: absolute;
+                right: 4rem;
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 880px){
+            body{
+                background-position: 400% -70px;
+            }
+
+            .hero-img-wrapper{
+                right: 4rem;
+                width: 270px;
+            }
+
+            h1{
+                font-size:  48px;
+            }
+            h2{
+                font-size:  45px;
+            }
+        }
+
+        @media screen and (max-width: 870px){
+            body{
+                background-position: 25rem -70px;
+            }
+        }
+
+        @media screen and (max-width: 823px){
+            body{
+                background-position: 23.5rem -70px;
+            }
+        }
+
+        @media screen and (max-width: 812px){
+            body{
+                background-position: 22rem -70px;
+            }
+
+            ul.navbar-nav{
+                justify-content: start !important;
+            }
+
+            h1{
+                line-height: 39px;
+            }
+
+            .hero-img-wrapper{
+                right: 3rem;
+                width: 255px;
+            }
+
+            
+        }
+
+        @media screen and (max-width: 784px){
+            body{
+                background-position: 19rem -70px;
+            }
+
+            .hero-img-wrapper{
+                right: 3.5rem;
+                width: 280px;
+            }
+
+            h1{
+                font-size:  44px;
+                line-height: 41px;
+            }
+            h2{
+                font-size:  37px;
+                line-height: 42px;
+            }
+        }
+    }
+
     @media screen and (min-width: 992px) {
         body{
             background-position: 210% -70px;
@@ -171,7 +314,7 @@ h6 {
         }
     
         h1{
-            font-size:  60px;
+            font-size: 60px;
         }
     
         .hero-img-wrapper{
