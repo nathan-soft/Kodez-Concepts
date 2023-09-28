@@ -43,8 +43,8 @@ nav{
 
 section, .footer-section{
     position: relative;
-    padding-top: 3.125rem;
-    padding-bottom:  3.125rem;
+    padding-top: 4rem;
+    padding-bottom:  4rem;
 }
 
 .hero-section{
@@ -53,6 +53,8 @@ section, .footer-section{
     align-items: center;
     padding: 0;
     height: 75vh;
+    min-height: 34.375rem;
+    max-height: 60rem;
     min-width: 100%;
     background-image: url('../images/Hero-img-large.jpg');
     background-size: cover;
@@ -76,6 +78,10 @@ section, .footer-section{
     color: var(--bg-primary);
 }
 
+.hidden-sub-heading{
+    display: none;
+}
+
 a{
     color:  var(--light-grey);
 }
@@ -97,7 +103,7 @@ h3,
 h4,
 h5,
 h6{
-    color: #212529;
+    color: #616161;
 }
 
 /* 08033515757 - adekunbo */
@@ -227,6 +233,11 @@ h6 {
 }
 
 @media screen and (max-width: 767px) {
+    .hero-content h1{
+        font-size: var(--h3-size);
+        line-height: 34px;
+    }
+
     .services-icon{
         width:  2.5rem;
     }
@@ -243,10 +254,9 @@ h6 {
         min-width: 100%;
     }
 
-    .hero-content h1,
-    .hero-content h2{
-        font-size: var(--h4-size);
-        line-height: 34px;
+    .hero-content h1{
+        font-size: var(--h3-size);
+        line-height: 43px;
     }
     
     .cta-section{
@@ -260,6 +270,16 @@ h6 {
 
     .services-text{
         width:  65%;
+    }
+
+    @media screen and (max-width: 521px) {
+        .hidden-sub-heading{
+            display: inline;
+        }
+
+        .hero-content h1:last-child{
+            display: none;
+        }
     }
    
 }
