@@ -17,6 +17,7 @@
 }
 
 body{
+    position: relative;
     color:  var(--light-grey);
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
