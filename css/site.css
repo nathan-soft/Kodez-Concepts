@@ -20,29 +20,16 @@ body{
     color:  var(--light-grey);
     font-family: Poppins, system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     background-color:  var(--accent1);
-    background-image:  url(../images/hero-canvas-large.svg);
-    background-position: 115% 0;
-    /* background-size:  contain; */
-    background-repeat:  no-repeat;
 }
 
-/* @media screen and (min-width: 1800px) {
-    body{
-        background-position: 1320px 0;
-    }
-} */
-
 @media screen and (min-width: 1901px) {
-    body{
-        background-image: none;
-    }
     .navbar-nav{
         justify-content: end!important;
     }
 }
 
 nav{
-    background-color:  transparent;
+    background-color:  var(--bg-primary);
 }
 
 .navbar-nav .nav-link.active,
@@ -51,24 +38,47 @@ nav{
     color: #11ce5d;
 }
 
-.hero-section{
-    min-height: calc(720px + 45px);
-    min-width: 100%;
+section, .footer-section{
+    position: relative;
+    padding-top: 3.125rem;
+    padding-bottom:  3.125rem;
 }
 
-.hero-section>div{
-    margin-top: 5rem;
+.hero-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    height: 75vh;
+    min-width: 100%;
+    background-image: url('../images/Hero-img-large.jpg');
+    background-size: cover;
+    background-position: top;
+}
+
+.hero-overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 85, 44, 0.62);
+}
+
+.hero-content{
+    position: relative;
+    color: var(--bg-primary);
+    z-index: 3;
+}
+
+.hero-content h1,
+.hero-content h2 {
+    color: var(--bg-primary);
 }
 
 a{
     color:  var(--light-grey);
 }
 
-section, .footer-section{
-    position: relative;
-    padding-top: 3.125rem;
-    padding-bottom:  3.125rem;
-}
+
 
 .services-section,
 .product-section{
@@ -159,26 +169,8 @@ h6 {
 @media screen and (max-width: 1400px){
 
     @media screen and (min-width: 768px) and (max-width: 992px)  {
-        body{
-            background-position: 230% -70px;
-            /* background-size:  auto 380px; */
-        }
-
         .navbar .container{
             gap: 2.3rem;
-        }
-    
-        .hero-section{
-            min-height: 500px;
-        }
-
-        .hero-section>div{
-            margin-top: 3rem;;
-            justify-content: start !important;
-        }
-
-        .hero-content{
-            width: 66.6666%;
         }
         
         h1{
@@ -187,81 +179,8 @@ h6 {
         h2{
             font-size:  45px;
         }
-    
-        .hero-img-wrapper{
-            position: absolute;
-            right: 5rem;
-            width: 320px;
-        }
-
-        @media screen and (max-width: 960px){
-            body{
-                background-position: 260% -70px;
-                /* background-size:  auto 380px; */
-            }
-        }
-
-        @media screen and (max-width: 930px){
-            body{
-                background-position: 290% -70px;
-                /* background-size:  auto 380px; */
-            }
-
-            .hero-img-wrapper{
-                position: absolute;
-                right: 5rem;
-                width: 300px;
-            }
-        }
-
-        @media screen and (max-width: 900px){
-            body{
-                background-position: 350% -70px;
-                /* background-size:  auto 380px; */
-            }
-
-            .hero-img-wrapper{
-                position: absolute;
-                right: 4rem;
-                width: 300px;
-            }
-        }
-
-        @media screen and (max-width: 880px){
-            body{
-                background-position: 400% -70px;
-            }
-
-            .hero-img-wrapper{
-                right: 4rem;
-                width: 270px;
-            }
-
-            h1{
-                font-size:  48px;
-            }
-            h2{
-                font-size:  45px;
-            }
-        }
-
-        @media screen and (max-width: 870px){
-            body{
-                background-position: 25rem -70px;
-            }
-        }
-
-        @media screen and (max-width: 823px){
-            body{
-                background-position: 23.5rem -70px;
-            }
-        }
 
         @media screen and (max-width: 812px){
-            body{
-                background-position: 22rem -70px;
-            }
-
             ul.navbar-nav{
                 justify-content: start !important;
             }
@@ -269,25 +188,9 @@ h6 {
             h1{
                 line-height: 39px;
             }
-
-            .hero-img-wrapper{
-                right: 3rem;
-                width: 255px;
-            }
-
-            
         }
 
         @media screen and (max-width: 784px){
-            body{
-                background-position: 19rem -70px;
-            }
-
-            .hero-img-wrapper{
-                right: 3.5rem;
-                width: 280px;
-            }
-
             h1{
                 font-size:  44px;
                 line-height: 41px;
@@ -300,83 +203,10 @@ h6 {
     }
 
     @media screen and (min-width: 992px) {
-        body{
-            background-position: 210% -70px;
-            /* background-size:  auto 380px; */
-        }
-    
-        .hero-section{
-            min-height: calc(600px);
-        }
-        
-        .hero-section>div{
-            margin-top: 3rem;
-        }
-    
         h1{
             font-size: 60px;
         }
-    
-        .hero-img-wrapper{
-            width: 380px;
-        }
-    
-        @media screen and (min-width: 1031px) {
-            body{
-                background-position: 180% -60px;
-                /* background-size:  auto 380px; */
-            }
-        
-            .hero-section{
-                min-height: calc(600px);
-            }
-        
-            .hero-img-wrapper{
-                width: 400px;
-            }
-        }
-    }
-
-    @media screen and (min-width: 1141px){
-        body{
-            background-position: 160% -50px;
-            /* background-size:  auto 380px; */
-        }
-    
-        .hero-section{
-            min-height: calc(600px);
-        }
-    
-        .hero-img-wrapper{
-            width: 400px;
-        }
-    
-        @media screen and (min-width: 1201px) {
-            body{
-                background-position: 150% -40px;
-                /* background-size:  auto 380px; */
-            }
-        
-            .hero-section{
-                min-height: calc(670px);
-            }
-    
-            h1{
-                font-size:  63px;
-            }
-        
-            .hero-img-wrapper{
-                width: 420px;
-            }
-        }
-    
-        @media screen and (min-width: 1301px) {
-            body{
-                background-position: 130% -40px;
-                /* background-size:  auto 380px; */
-            }
-        }
-    }    
+    }   
 }
 
 @media screen and (max-width: 991px) {
@@ -400,12 +230,6 @@ h6 {
 }
 
 @media screen and (max-width: 576px) {
-    body{
-        background-image:  url(../images/hero-canvas-small.svg);
-        background-position: 100% 0;
-        background-size:  auto 380px;
-    }
-
     section, .footer-section{
         padding-top:  1.5rem;
         padding-bottom:  1.5rem;
@@ -415,21 +239,13 @@ h6 {
         min-height: initial;
         min-width: 100%;
     }
-    
-    .hero-section>div{
-        margin-top: 0;
-    }
 
     .hero-content h1,
     .hero-content h2{
         font-size: var(--h4-size);
         line-height: 34px;
     }
-
-    .hero-img-wrapper > img{
-        width: 270px;
-    }
-
+    
     .cta-section{
         padding-top:  2.9rem;
         padding-bottom:  2.9rem;
@@ -439,44 +255,8 @@ h6 {
         font-size: var(--h6-size);
     }
 
-    .hero-content{
-        margin-top: 2rem;
-    }
-
     .services-text{
         width:  65%;
-    }
-
-    
-    @media screen and (max-width: 520px) {
-        body{
-            background-size:  auto 370px;
-        }
-
-        .hero-img-wrapper > img{
-            width: 250px;
-        }
-       
-    }
-
-    @media screen and (max-width: 480px) {
-        body{
-            background-position: 100% 0;
-            background-size:  auto 360px;
-        }
-       
-    }
-
-    @media screen and (max-width: 408px) {
-        body{
-            background-position: 125% -7px;
-            background-size:  initial;
-        }
-
-        .hero-img-wrapper > img{
-            width: initial;
-        }
-       
     }
    
 }
