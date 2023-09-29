@@ -162,25 +162,42 @@ h6 {
 .product-wrapper{
     position: relative;
     border:1px solid transparent;
-    min-width: 244px;
+    min-width: 16rem;
     background-color: #F8F8FA;
     border-radius: 50%;
     overflow: hidden;
+    transition: transform 1s;
+}
+
+.product-wrapper:hover{
+    transform: rotate(20deg);
 }
 
 .product-img {
     object-fit: contain;
-    width: 244px;
-    height: 244px;
+    width: 16rem;
+    height: 16rem;
     transition: transform 1s;
     border-radius: 50%;
+}
+
+.product-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #F8F8FA;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0;
+    z-index: 5;
 }
 
 .product-overlay{
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #1b1a1a9f;
+    background-color: rgba(0, 85, 44, 0.62);
     border-radius: 50%;
 }
 
