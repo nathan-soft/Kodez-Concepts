@@ -334,6 +334,7 @@ h6 {
     .hero-section{
         min-height: initial;
         min-width: 100%;
+        margin-top: 67px;
     }
 
     .hero-content h1{
